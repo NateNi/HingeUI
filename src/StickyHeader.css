@@ -1,0 +1,67 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px 0px 0px 0px;
+    border-bottom: 1px solid #ededed;
+    z-index: 999;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .name {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .options-icon {
+    margin-right: 6px;
+    font-size: 20px;
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .back-icon {
+    margin-left: 6px;
+  }
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  .bottom-row {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .nav-item {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .selectedNav {
+    border-bottom: 2px solid #67265e;
+    display: inline-block;
+    color: #67265e;
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  .unselectedNav {
+    border-bottom: 2px solid white;
+    display: inline-block;
+    color: #ededed;
+    padding: 14px;
+    font-size: 12px;
+  }
+  
