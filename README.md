@@ -7,4 +7,5 @@ Designed for mobile only. Placeholders are provided for the images and text.
 # Image Attributes
 
 <a href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Prashanth Rapolu 15 - Flaticon</a>
+
 <a href="https://www.flaticon.com/free-icons/child" title="child icons">Child icons created by Prashanth Rapolu 15 - Flaticon</a>
