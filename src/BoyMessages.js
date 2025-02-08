@@ -1,37 +1,23 @@
 import React from "react";
 import "./index.css";
 
-const BoyMessages = ({ convos }) => {
+const BoyMessages = ({ convos, promptAnswer, promptQuestion, promptDate }) => {
   return (
     <div className="screenContainer">
       <div className="w-100 text-right openerContainer">
         <p className="text-center date">
           <strong>
-            {new Date("2022-10-09T21:07:21").toDateString().split(" ")[0]},{" "}
-            {new Date("2022-10-09T21:07:21").toDateString().split(" ")[1]}{" "}
-            {new Date("2022-10-09T21:07:21").toDateString().split(" ")[2]}
+            {new Date(promptDate).toDateString().split(" ")[0]},{" "}
+            {new Date(promptDate).toDateString().split(" ")[1]}{" "}
+            {new Date(promptDate).toDateString().split(" ")[2]}
           </strong>{" "}
-          {
-            new Date("2022-10-09T21:07:21")
-              .toLocaleTimeString("en-US")
-              .split(":")[0]
-          }
-          :
-          {
-            new Date("2022-10-09T21:07:21")
-              .toLocaleTimeString("en-US")
-              .split(":")[1]
-          }{" "}
-          {new Date("2022-10-09T21:07:21")
-            .toLocaleTimeString("en-US")
-            .slice(-2)}
+          {new Date(promptDate).toLocaleTimeString("en-US").split(":")[0]}:
+          {new Date(promptDate).toLocaleTimeString("en-US").split(":")[1]}{" "}
+          {new Date(promptDate).toLocaleTimeString("en-US").slice(-2)}
         </p>
         <div className="secondaryBubble prompt">
-          <p className="promptQuestion">Believe it or not, I</p>
-          <h2 className="promptAnswer">
-            Am very valuable during the music category of Geeks Who Drink trivia
-            🎶
-          </h2>
+          <p className="promptQuestion">{promptQuestion}</p>
+          <h2 className="promptAnswer">{promptAnswer}</h2>
         </div>
         <div className="hiddenBubbleTail"></div>
         <div className="infoBubbleRight">

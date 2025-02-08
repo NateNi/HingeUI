@@ -28,8 +28,9 @@ code {
 }
 
 .primaryBubbleTail {
+  /* position:relative; */
   bottom: 0px;
-  border-width:12px 0em 0em 9px;
+  border-width:12px 0em 0em 9px; /* the angle of the pipe */
   border-style:solid;
   border-color:transparent #67265e;
   display:inline-block; 
@@ -38,7 +39,8 @@ code {
 }
 
 .primaryBubbleTailEmoji {
-  border-width:12px 0em 0em 9px;
+  /* position:relative; */
+  border-width:12px 0em 0em 9px; /* the angle of the pipe */
   border-style:solid;
   border-color:transparent #67265e;
   display:inline-block; 
@@ -47,8 +49,9 @@ code {
 }
 
 .secondaryBubbleTail {
+  /* position:relative; */
   bottom: 0px;
-  border-width:12px 9px 0em 0px;
+  border-width:12px 9px 0em 0px; /* the angle of the pipe */
   border-style:solid;
   border-color:transparent #ededed;
   display:inline-block; 
@@ -57,12 +60,35 @@ code {
 }
 
 .secondaryBubbleTailEmoji {
-  border-width:12px 9px 0em 0px;
+  /* position:relative; */
+  border-width:12px 9px 0em 0px; /* the angle of the pipe */
   border-style:solid;
   border-color:transparent #ededed;
   display:inline-block; 
   margin-bottom: -17px;
   margin-right: -1px;
+}
+
+.promptRightBubbleTail {
+  position:relative;
+  bottom: 0px;
+  border-width:12px 0em 0em 9px; /* the angle of the pipe */
+  border-style:solid;
+  border-color:transparent #eee0dd;
+  display:inline-block; 
+  top: -35px;
+  left: -1px;
+}
+
+.promptLeftBubbleTail {
+  position:relative;
+  bottom: 0px;
+  border-width:12px 9px 0em 0px; /* the angle of the pipe */
+  border-style:solid;
+  border-color:transparent #eee0dd;
+  display:inline-block; 
+  top: -35px;
+  left: 36px;
 }
 
 .primaryBubble {
@@ -72,6 +98,8 @@ code {
 }
 
 .secondaryBubble {
+  /* margin-right: auto; 
+  margin-left: 0; */
   background-color: #ededed;
   border-radius: 8px 8px 8px 0px;
   display: inline-block;
@@ -85,8 +113,8 @@ code {
   width: calc(100% - 32px);
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 40px;
+  padding-bottom: 64px;
 }
 
 .profilePic {
@@ -123,4 +151,61 @@ code {
   margin-bottom: 8px;
   font-size: 12px;
   color: #b2b3b0;
+}
+
+.promptQuestion {
+  font-size: 12px;
+}
+
+.promptAnswer {
+  font-family: 'Times New Roman';
+  margin-top: 0px;
+  line-height: 26px;
+}
+
+.prompt {
+  padding: 40px 24px 40px 24px;
+  border-radius: 8px;
+}
+
+.infoBubbleRight {
+  background-color: #eee0dd;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 8px 8px 0px 8px;
+  top: -50px;
+  position: relative;
+}
+
+.infoBubbleLeft {
+  background-color: #eee0dd;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 8px 8px 8px 0px;
+  top: -50px;
+  left: 35px;
+  position: relative;
+}
+
+.float-right {
+  float: right;
+}
+
+.hiddenBubbleTail {
+  bottom: 0px;
+  border-width:12px 9px 0em 0px; /* the angle of the pipe */
+  border-style:solid;
+  border-color:transparent white;
+  display:inline-block; 
+  margin-bottom: -17px;
+  margin-right: -1px;
+}
+
+.firstBoyPic {
+  top: 56px !important;
+  position: relative;
+}
+
+.openerContainer {
+  margin-bottom: -34px;
 }

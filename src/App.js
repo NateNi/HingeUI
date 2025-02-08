@@ -9,7 +9,7 @@ import { LoremIpsum } from "lorem-ipsum";
 function App() {
   const lorem = new LoremIpsum({
     sentencesPerParagraph: {
-      max: 6,
+      max: 4,
       min: 2,
     },
     wordsPerSentence: {
@@ -18,11 +18,15 @@ function App() {
     },
   });
 
+  let promptQuestion = lorem.generateWords(4);
+  let promptAnswer = lorem.generateParagraphs(1);
+  let promptDate = "2022-01-01T06:59:00";
+
   let convos = [];
-  for (let index = 0; index < 14; index++) {
+  for (let index = 1; index < 9; index++) {
     convos.push({
       id: index,
-      date: "2022-10-" + index + " 2:50:10",
+      date: "2022-01-0" + index + "T07:00:00",
       chat: lorem.generateParagraphs(1),
       person: index % 2 ? "boy" : "girl",
     });
@@ -70,28 +74,40 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {showModal && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="heart-animation"></div>
-            <h2 className="text-center">Happy Valentine's Day!</h2>
-            <p className="text-center">February 14, 2024</p>
+    <div className="outerContainer">
+      <div className="App">
+        {showModal && (
+          <div className="modal-overlay">
+            <div className="modal-content">
+              <div className="heart-animation"></div>
+              <h2 className="text-center">Happy Valentine's Day!</h2>
+              <p className="text-center">February 14, 2024</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <StickyHeader
-        convoTarget={showBoy ? "Girl" : "Boy"}
-        toggleComponent={toggleComponent}
-        handleButtonClick={handleButtonClick}
-      />
-      {showBoy ? (
-        <BoyMessages convos={convos} />
-      ) : (
-        <GirlMessages convos={convos} />
-      )}
-      <StickyFooter />
+        <StickyHeader
+          convoTarget={showBoy ? "Girl" : "Boy"}
+          toggleComponent={toggleComponent}
+          handleButtonClick={handleButtonClick}
+        />
+        {showBoy ? (
+          <BoyMessages
+            convos={convos}
+            promptAnswer={promptAnswer}
+            promptQuestion={promptQuestion}
+            promptDate={promptDate}
+          />
+        ) : (
+          <GirlMessages
+            convos={convos}
+            promptAnswer={promptAnswer}
+            promptQuestion={promptQuestion}
+            promptDate={promptDate}
+          />
+        )}
+        <StickyFooter />
+      </div>
     </div>
   );
 }
