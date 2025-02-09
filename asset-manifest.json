@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/HingeUI/static/css/main.67cbaa02.chunk.css",
+    "main.js": "/HingeUI/static/js/main.45eef5e3.chunk.js",
+    "main.js.map": "/HingeUI/static/js/main.45eef5e3.chunk.js.map",
+    "runtime~main.js": "/HingeUI/static/js/runtime~main.0aee85b4.js",
+    "runtime~main.js.map": "/HingeUI/static/js/runtime~main.0aee85b4.js.map",
+    "static/js/2.b9febd3f.chunk.js": "/HingeUI/static/js/2.b9febd3f.chunk.js",
+    "static/js/2.b9febd3f.chunk.js.map": "/HingeUI/static/js/2.b9febd3f.chunk.js.map",
+    "static/js/3.62d5139d.chunk.js": "/HingeUI/static/js/3.62d5139d.chunk.js",
+    "static/js/3.62d5139d.chunk.js.map": "/HingeUI/static/js/3.62d5139d.chunk.js.map",
+    "index.html": "/HingeUI/index.html",
+    "precache-manifest.17ebd04190434f41edab020531f5e7e0.js": "/HingeUI/precache-manifest.17ebd04190434f41edab020531f5e7e0.js",
+    "service-worker.js": "/HingeUI/service-worker.js",
+    "static/css/main.67cbaa02.chunk.css.map": "/HingeUI/static/css/main.67cbaa02.chunk.css.map",
+    "static/media/index.css": "/HingeUI/static/media/girl.65e65c03.png",
+    "static/media/App.css": "/HingeUI/static/media/mini-heart.b114b287.svg"
+  }
+}
